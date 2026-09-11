@@ -9,4 +9,12 @@ import { Component } from '@angular/core';
 export class Etudiant {
   nomEtu: string = "Bon"
   prenomEtu: string = "Prénom"
+
+  retNomEtu():string {
+    return this.nomEtu;
+  }
+
+  retPrenomEtu():string {
+    return this.prenomEtu;
+  }
 }
