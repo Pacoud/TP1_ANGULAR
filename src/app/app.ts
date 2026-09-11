@@ -11,7 +11,7 @@ export class App {
   nom_TP = "TP1";
   estAuth:boolean= false;
   resumeSeance = "Prise en main d'Angular, première application";
-  
+
   constructor(private changeDetector: ChangeDetectorRef) {
     setTimeout(() => {
       this.estAuth = true;
@@ -19,6 +19,10 @@ export class App {
 
     }, 3000);
   }
+    rendTousPres(){
+    console.log("test");
+  }
+
   protected readonly title = signal('TP1_ANGULAR');
 
 

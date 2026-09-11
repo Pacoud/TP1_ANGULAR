@@ -24,5 +24,7 @@
 
 
 <app-etudiant></app-etudiant>
-<button class="btn btn-success d-block mx-auto"  [disabled]="!estAuth">Tous présents</button>
+<button class="btn btn-success d-block mx-auto" 
+ (click)="rendTousPres()"
+ [disabled]="!estAuth" >Tous présents</button>
 <router-outlet />
