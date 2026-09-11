@@ -9,6 +9,7 @@ import { Etudiant } from './etudiant/etudiant';
 })
 export class App {
   nom_TP = "TP1";
+  estAuth:boolean= false;
   resumeSeance = "Prise en main d'Angular, première application";
   protected readonly title = signal('TP1_ANGULAR');
 
