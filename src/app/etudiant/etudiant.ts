@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Input, Component } from '@angular/core';
 
 @Component({
   selector: 'app-etudiant',
@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './etudiant.css',
 })
 export class Etudiant {
-  nomEtu: string = "Bon"
-  prenomEtu: string = "Prénom"
-  statutEtu: string = "absent"
+  @Input() nomEtu: string = ''
+  @Input() prenomEtu: string = ''
+  @Input() statutEtu: string = ''
 
   retNomEtu():string {
     return this.nomEtu;
