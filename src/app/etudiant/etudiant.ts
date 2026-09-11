@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
 export class Etudiant {
   nomEtu: string = "Bon"
   prenomEtu: string = "Prénom"
+  statutEtu: string = "absent"
 
   retNomEtu():string {
     return this.nomEtu;
